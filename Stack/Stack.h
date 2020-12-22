@@ -27,7 +27,7 @@ void Stack<T>::clear_stack()
 	while (pFirst != NULL)
 	{
 		TLink<T>* tmp = pFirst->pNext;
-		delete tmp;
+		delete pFirst;
 		pFirst = tmp;
 	}
 }
